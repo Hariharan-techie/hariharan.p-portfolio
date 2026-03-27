@@ -134,7 +134,7 @@ nav.scrolled { border-bottom-color: var(--line); }
 }
 
 .nav-cta:hover {
-  background: var(--red);
+  background: #A752E3;
   transform: translateY(-1px);
 }
 
@@ -195,14 +195,14 @@ nav.scrolled { border-bottom-color: var(--line); }
 
 .hero h1 em {
   font-style: italic;
-  color: var(--red);
+  color: #A752E3;
 }
 
 .hero-sub {
   font-size: 1.05rem;
   color: var(--muted);
   line-height: 1.8;
-  max-width: 420px;
+  max-width: 700px;
   font-weight: 300;
   margin-bottom: 2.5rem;
 }
@@ -235,8 +235,8 @@ nav.scrolled { border-bottom-color: var(--line); }
 }
 
 .btn-dark:hover {
-  background: var(--red);
-  border-color: var(--red);
+  background: #A752E3;
+  border-color: #A752E3;
   transform: translateY(-2px);
 }
 
@@ -253,7 +253,7 @@ nav.scrolled { border-bottom-color: var(--line); }
   transition: color 0.2s, border-color 0.2s;
 }
 
-.btn-ghost:hover { color: var(--red); border-color: var(--red); }
+.btn-ghost:hover { color: #A752E3; border-color: #A752E3; }
 
 /* Hero right — Small portrait photo */
 .hero-right {
@@ -364,7 +364,7 @@ nav.scrolled { border-bottom-color: var(--line); }
   padding: 0 2.5rem;
 }
 
-.marquee-track span.accent { color: var(--sand); }
+.marquee-track span.accent { color: #A752E3; }
 
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -414,7 +414,7 @@ nav.scrolled { border-bottom-color: var(--line); }
   line-height: 1.1;
 }
 
-.section-title em { font-style: italic; color: var(--red); }
+.section-title em { font-style: italic; color: #A752E3; }
 
 /* ─── CASE STUDIES ─── */
 .case-list { display: flex; flex-direction: column; gap: 0; }
@@ -433,7 +433,7 @@ nav.scrolled { border-bottom-color: var(--line); }
 
 .case-item:first-child { border-top: 1px solid var(--line); }
 
-.case-item:hover .case-title { color: var(--red); }
+.case-item:hover .case-title { color: #A752E3; }
 
 .case-num {
   font-family: var(--font);
@@ -462,7 +462,7 @@ nav.scrolled { border-bottom-color: var(--line); }
 }
 
 .tag-health { border-color: var(--teal); color: var(--teal); }
-.tag-gov { border-color: var(--sand); color: #9A7A44; }
+.tag-gov { border-color: #A752E3; color: #9A7A44; }
 .tag-saas { border-color: #7B8FA1; color: #7B8FA1; }
 
 .case-title {
@@ -562,7 +562,7 @@ nav.scrolled { border-bottom-color: var(--line); }
   color: var(--ink);
 }
 
-.about-heading em { font-style: italic; color: var(--red); }
+.about-heading em { font-style: italic; color: #A752E3; }
 
 .about-body {
   font-size: 0.95rem;
@@ -578,7 +578,7 @@ nav.scrolled { border-bottom-color: var(--line); }
 .ai-callout {
   background: var(--white);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--teal);
+  border-left: 3px solid #A752E3;
   padding: 1.25rem 1.5rem;
   margin-top: 2rem;
   border-radius: 2px;
@@ -588,7 +588,7 @@ nav.scrolled { border-bottom-color: var(--line); }
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--teal);
+  color: #A752E3;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -717,13 +717,12 @@ nav.scrolled { border-bottom-color: var(--line); }
   border: 1px solid var(--line);
   padding: 0.2rem 0.65rem;
   border-radius: 2px;
-  color: var(--ink2);
+  color: #A752E3;
 }
 
 .exp-pill.highlight {
-  background: var(--ink);
+  background: #A752E3;
   color: var(--white);
-  border-color: var(--ink);
 }
 
 /* ─── SKILLS ─── */
@@ -778,7 +777,7 @@ nav.scrolled { border-bottom-color: var(--line); }
 }
 
 .sbt.featured {
-  color: var(--teal);
+  color: #A752E3;
   font-weight: 600;
 }
 
@@ -812,7 +811,7 @@ nav.scrolled { border-bottom-color: var(--line); }
   color: var(--white);
 }
 
-.contact-heading em { font-style: italic; color: var(--sand); }
+.contact-heading em { font-style: italic; color: #A752E3; }
 
 .contact-sub {
   font-size: 0.95rem;
@@ -839,8 +838,8 @@ nav.scrolled { border-bottom-color: var(--line); }
 }
 
 .contact-link:hover {
-  background: var(--sand);
-  border-color: var(--sand);
+  background: #A752E3;
+  border-color: #A752E3;
   transform: translateY(-2px);
 }
 
@@ -873,7 +872,7 @@ nav.scrolled { border-bottom-color: var(--line); }
 }
 
 .ci-value a { color: inherit; text-decoration: none; transition: color 0.2s; }
-.ci-value a:hover { color: var(--sand); }
+.ci-value a:hover { color: #A752E3; }
 
 /* ─── FOOTER ─── */
 footer {
@@ -972,7 +971,7 @@ footer {
 }
 
 .carousel-slide {
-  min-width: 100%;
+  width: 100%;
   height: 100%;
   flex-shrink: 0;
   overflow: hidden;
