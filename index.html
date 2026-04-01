@@ -24,7 +24,11 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
     </ul>
-    <a href="/cdn-cgi/l/email-protection#cdbebaacaaacb9a5e3b9a8aea5b48daaa0aca4a1e3aea2a0" class="nav-cta">Hire Me</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+      <span class="theme-toggle-label" id="themeLabel">Dark</span>
+    </button>
+    <a href="mailto:swagath.techy@gmail.com?subject=Hiring%20Enquiry%20%E2%80%94%20UI%2FUX%20Designer" class="nav-cta">Hire Me</a>
   </div>
 </nav>
 
@@ -46,7 +50,7 @@
     </p>
     <div class="hero-actions">
       <a href="#work" class="btn-dark">View my work &rarr;</a>
-      <a href="/cdn-cgi/l/email-protection#671410060006130f491302040f1e27000a060e0b4904080a" class="btn-ghost">Say hello</a>
+      <a href="mailto:swagath.techy@gmail.com?subject=Hello%20Hariharan%20%E2%80%94%20Let%27s%20Connect" class="btn-ghost">Say hello</a>
     </div>
   </div>
 
@@ -449,12 +453,12 @@
     <p class="contact-overline">Let's work together</p>
     <h2 class="contact-heading">Got a project<br>in <em>mind?</em></h2>
     <p class="contact-sub">I'm currently open to new opportunities — full-time roles or freelance collaborations. If you'd like to discuss how I can help, I'd love to hear from you.</p>
-    <a href="/cdn-cgi/l/email-protection#4a393d2b2d2b3e22643e2f2922330a2d272b232664292527" class="contact-link">Send me a message &rarr;</a>
+    <a href="mailto:swagath.techy@gmail.com?subject=Project%20Enquiry%20%E2%80%94%20Let%27s%20Work%20Together" class="contact-link">Send me a message &rarr;</a>
   </div>
   <div class="contact-right reveal">
     <div class="contact-info-item">
       <div class="ci-label">Email</div>
-      <div class="ci-value"><a href="/cdn-cgi/l/email-protection#473430262026332f693322242f3e07202a262e2b6924282a"><span class="__cf_email__" data-cfemail="235054424442574b0d5746404b5a63444e424a4f0d404c4e">[email&#160;protected]</span></a></div>
+      <div class="ci-value"><a href="mailto:swagath.techy@gmail.com">swagath.techy@gmail.com</a></div>
     </div>
     <div class="contact-info-item">
       <div class="ci-label">Phone</div>
@@ -614,5 +618,34 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 
   updateUI();
   startAuto();
+});
+
+// ── DARK / LIGHT MODE TOGGLE ──
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+const themeLabel = document.getElementById('themeLabel');
+const html = document.documentElement;
+
+// Load saved preference
+const savedTheme = localStorage.getItem('theme') || 'light';
+if (savedTheme === 'dark') {
+  html.setAttribute('data-theme', 'dark');
+  themeIcon.textContent = '☀️';
+  themeLabel.textContent = 'Light';
+}
+
+themeToggle.addEventListener('click', () => {
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    html.removeAttribute('data-theme');
+    themeIcon.textContent = '🌙';
+    themeLabel.textContent = 'Dark';
+    localStorage.setItem('theme', 'light');
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    themeIcon.textContent = '☀️';
+    themeLabel.textContent = 'Light';
+    localStorage.setItem('theme', 'dark');
+  }
 });
 </script>
